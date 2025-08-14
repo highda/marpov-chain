@@ -6,7 +6,7 @@ import sys
 import os
 import scraper
 
-def sestav_marpov_chain(text, kontextove_okno=2):
+def sestav_marpov_chain(text, kontextove_okno=1):
     text = re.sub(r'[^\w\s]', '', text.lower(), flags=re.UNICODE)
     slova = text.split()
     marpov_model = defaultdict(list)
@@ -47,7 +47,7 @@ def ziskej_nahodne_z_counteru(counter):
             return klic
     return None
 
-def generuj_text(marpov_chain_slova, model_delky_radku, model_pozice_carky, celkovy_pocet_radku=15, kontextove_okno=2):
+def generuj_text(marpov_chain_slova, model_delky_radku, model_pozice_carky, celkovy_pocet_radku=15, kontextove_okno=1):
     vsechna_slova = list(set(k for key in marpov_chain_slova.keys() for k in key) | set(v for values in marpov_chain_slova.values() for v in values))
     
     if not vsechna_slova or not model_delky_radku:
@@ -147,4 +147,5 @@ if __name__ == "__main__":
             celkovy_pocet_radku=argumenty.celkovy_pocet_radku,
             kontextove_okno=argumenty.kontextove_okno
         )
+
         print(vygenerovany_text)
