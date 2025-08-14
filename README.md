@@ -33,7 +33,7 @@ Pro experimentoví s počtem řádků, velikostí kontextu okna (což má celkem
 | Argument | Výchozí hodnota | Popis |
 |---|---|---|
 | `--vstupni_soubor` | `lyrics.txt` | Zdrojová data, srdce Marpa. |
-| `--kontextove_okno`| `2` | Počet slov pro zapamatování při výběru dalšího slova. Větší číslo = víc Marpo, míň random. |
+| `--kontextove_okno`| `1` | Počet slov pro zapamatování při výběru dalšího slova. Větší číslo = víc Marpo, míň random. |
 | `--celkovy_pocet_radku`| `15` | Kolik řádků Marpovin vygenerovat. |
 
 **Příklad:** 20 řádků Marpovin s kontextem 3.
@@ -56,3 +56,4 @@ A pak už jen Marpova nasměruješ na nový soubor:
 python marpov.py --vstupni_soubor "gott_lyrics.txt"
 
 ```
+
