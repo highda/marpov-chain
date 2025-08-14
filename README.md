@@ -28,7 +28,7 @@ Skript zkontroluje, jestli už máš Marpa v `lyrics.txt`. Pokud ne, automaticky
 
 ### Volitelné parametry
 
-Pro experimentovímé s počtem řádků, velikostí kontextu okna (což má celkem vliv na kvalitu), lze použít argumenty:
+Pro experimentoví s počtem řádků, velikostí kontextu okna (což má celkem vliv na kvalitu), lze použít argumenty:
 
 | Argument | Výchozí hodnota | Popis |
 |---|---|---|
@@ -54,4 +54,5 @@ A pak už jen Marpova nasměruješ na nový soubor:
 
 ```bash
 python marpov.py --vstupni_soubor "gott_lyrics.txt"
+
 ```
